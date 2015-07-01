@@ -59,22 +59,22 @@ h1, .poll, .cta, .description {
     }
 
     p {
-        width: 50%;
+        max-width: em(540);
         margin: 2em auto;
 
         &.lead {
             font-family: HelveticaNeue-Medium;
-            font-size: 20px;
+            font-size: 1.75em;
             color: #FFFFFF;
-            line-height: 30px;
+            line-height: 1.5;
             margin-bottom: 0;
         }
 
         &.supporting {
             font-family: HelveticaNeue-Light;
-            font-size: 16px;
+            font-size: 1.35em;
             color: #FFFFFF;
-            line-height: 24px;
+            line-height: 1.5;
             margin-top: 1em;
         }
     }
@@ -92,8 +92,12 @@ h1, .poll, .cta, .description {
         @include outer-container;
 
         .form-category {
-            @include span-columns(6 of 12);
+            @include span-columns(12);
             padding: 0 em(10);
+
+            @include media( em(640)) {
+                @include span-columns(6);
+            }
         }
     }
 

@@ -667,19 +667,19 @@ h1, .poll, .cta, .description {
   .hero h1 {
     margin: 0; }
   .hero p {
-    width: 50%;
+    max-width: 33.75em;
     margin: 2em auto; }
     .hero p.lead {
       font-family: HelveticaNeue-Medium;
-      font-size: 20px;
+      font-size: 1.75em;
       color: #FFFFFF;
-      line-height: 30px;
+      line-height: 1.5;
       margin-bottom: 0; }
     .hero p.supporting {
       font-family: HelveticaNeue-Light;
-      font-size: 16px;
+      font-size: 1.35em;
       color: #FFFFFF;
-      line-height: 24px;
+      line-height: 1.5;
       margin-top: 1em; }
 
 /*************************
@@ -699,10 +699,18 @@ h1, .poll, .cta, .description {
       float: left;
       display: block;
       margin-right: 2.3576515979%;
-      width: 48.821174201%;
+      width: 100%;
       padding: 0 0.625em; }
       .poll .row .form-category:last-child {
         margin-right: 0; }
+      @media screen and (min-width: 40em) {
+        .poll .row .form-category {
+          float: left;
+          display: block;
+          margin-right: 2.3576515979%;
+          width: 48.821174201%; }
+          .poll .row .form-category:last-child {
+            margin-right: 0; } }
   .poll .btn {
     margin-top: 2em; }
 
