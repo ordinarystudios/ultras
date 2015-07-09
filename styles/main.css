@@ -687,6 +687,8 @@ h1, .poll, .cta, .description {
 *************************/
 .poll {
   padding: 3.125em 0; }
+  .poll h4:nth-child(3) {
+    margin-top: 32px; }
   .poll .row {
     max-width: 68em;
     margin-left: auto;

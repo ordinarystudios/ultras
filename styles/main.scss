@@ -88,6 +88,10 @@ h1, .poll, .cta, .description {
 
     padding: em(50) 0;
 
+    h4:nth-child(3) {
+        margin-top: 32px;
+    }
+
     .row {
         @include outer-container;
 
